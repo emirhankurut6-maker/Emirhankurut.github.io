@@ -26,6 +26,11 @@
             background: #111;
         }
 
+        .kart.tehlike {
+            border: 2px solid darkred;
+            background: #1a0000;
+        }
+
         button {
             padding: 10px;
             margin-top: 10px;
@@ -34,6 +39,10 @@
             color: white;
             border: none;
             border-radius: 10px;
+        }
+
+        button.tehlike {
+            background: darkred;
         }
     </style>
 </head>
@@ -62,6 +71,12 @@
     <button onclick="ana()">Detay</button>
 </div>
 
+<div class="kart tehlike">
+    <h3>🌑 Karanlığın İçindeki Yaratık</h3>
+    <p>Laboratuvarın gerçek sahibi... Sınırlı, iki formu var ve bizi öldürmek için elinden geleni yapar!</p>
+    <button class="tehlike" onclick="yaratik()">Detay</button>
+</div>
+
 <script>
 function arda() {
     alert("Arda aslında kötü değil... sadece yanlış anlaşılmış!");
@@ -73,6 +88,18 @@ function lo() {
 
 function ana() {
     alert("Sen aslında ana karaktersin 😎");
+}
+
+function yaratik() {
+    alert("🌑 KARANLAĞIN İÇİNDEKİ YARATIK 🌑\n\n" +
+          "Hikayesi:\n" +
+          "O sadece sınırlı ve 2 formu var:\n" +
+          "1️⃣ FİZİKSEL FORM (henüz görülmedi!)\n" +
+          "2️⃣ GAZ FORMU\n\n" +
+          "Bizi öldürmek için elinden geleni yapar, adeta laboratuvarın gerçek sahibi!\n\n" +
+          "⚠️ TURUNCU EL (Grackpack gibi) ona hem gaz halindeyken hemde fiziksel halindeyken zarar verir!\n\n" +
+          "Turuncu eli bizden almak ister...\n\n" +
+          "⏳ Fiziksel formunu henüz görmedik ama ilerleyen bölümlerde göreceğimiz kesin!");
 }
 </script>
 
